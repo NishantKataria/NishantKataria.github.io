@@ -81,7 +81,7 @@ body{
 }
 
   #img1{
-    background-image: url('Images/Background/nature1.jpg');
+    background-image: url('Images/Background/pixel.jpg');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -115,7 +115,7 @@ body{
 
 }
 .thumbs{
-    background-image: url('Images/Background/nature.jpg');
+    background-image: url("Images/Background/nature.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -130,14 +130,7 @@ body{
     width: 33.33%;
     padding: 50px 0px;
     margin-left: 0px;  
-}
-
-.imgcol a img:hover{
-    box-shadow: 2px 4px 30px 8px #f00;
-    color: white;
-    transition: transform .3s;
-    transform: scale(1.3);
-    
+    overflow: inherit;
 }
 .imgcol a img{
     transition-timing-function: ease;
@@ -145,16 +138,25 @@ body{
     width: 70%;
     height: auto;
     margin-left: 15%;
-    border: 2px solid white;
-    box-shadow: 1px 2px 55px 8px #098;
+    
 }
+
+.imgcol a img:hover{
+    box-shadow: 2px 4px 30px 8px #000;
+    color: white;
+    transition: transform .3s;
+    transform: scale(1.3);
+    
+    
+}
+
 
 #contact{
     background-image: url('Images/Background/pixel.jpg');
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 800px;
+    height: 700px;
     margin-top: -34px;
     color: rgba(255, 253, 255, 0.8);
     text-shadow: 0px 0px 10px white;
@@ -172,18 +174,21 @@ body{
    font-size: 50px;
 }
 .row{
-    display: flex;
-    
+    display: flex;    
 }
+
 .col{
     float: left;
 }
+
 .left{
     width: 30%;
 }
+
 .right{
     width: 70%;
 }
+
 #info{
     text-align: center;
     font-size: 40px;
@@ -201,6 +206,7 @@ body{
     color: white;
     font-family: arial rounded MT;
     font-size: 16px;
+    letter-spacing: 2px;
     border-radius: 20px;
     border: 2px solid rgb(50,55,55);
     padding: 10px;
